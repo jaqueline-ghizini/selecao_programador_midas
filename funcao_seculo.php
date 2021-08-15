@@ -31,7 +31,8 @@
                 $ano=0;
                 $resto=0.0; 
                 $seculo=0;
-                
+            if(!empty($_POST)){  
+		    
                 $ano = $_POST['ano'];
 
                 function calcular_diferenca($parametro_ano){
@@ -60,6 +61,8 @@
                     $seculo = calcular_seculo_resto($ano,$resto);
                     echo 'Século '.$seculo;
                 }
+		    
+	    }
             ?>
 
         </div>
